@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const htmlPath = path.resolve(__dirname, 'catalogo-dia-dos-namorados.html');
+const htmlPath = path.resolve(__dirname, 'index.html');
 const pdfPath  = path.resolve(__dirname, 'catalogo-mobile.pdf');
 
 (async () => {

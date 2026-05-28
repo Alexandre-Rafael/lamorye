@@ -3,7 +3,7 @@ const sharp     = require('sharp');
 const path      = require('path');
 const fs        = require('fs');
 
-const htmlPath   = 'file:///' + path.resolve(__dirname, 'catalogo-dia-dos-namorados.html').replace(/\\/g, '/');
+const htmlPath   = 'file:///' + path.resolve(__dirname, 'index.html').replace(/\\/g, '/');
 const mobilePdf  = path.resolve(__dirname, 'catalogo-mobile.pdf');
 const desktopPdf = path.resolve(__dirname, 'catalogo-desktop.pdf');
 
