@@ -686,6 +686,20 @@
     let allWorkspaceImages = [];
     let activeSelectCallback = null;
 
+    // Resolve relative image URLs to GitHub CDN in Vercel production
+    function resolveImageUrl(url) {
+      if (!url) return '';
+      if (url.startsWith('http://') || url.startsWith('https://') || url.startsWith('data:')) {
+        return url;
+      }
+      const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+      if (isLocal) {
+        return url;
+      } else {
+        return `https://raw.githubusercontent.com/Alexandre-Rafael/lamorye/main/${url}`;
+      }
+    }
+
     // Load data from APIs
     async function init() {
       try {
@@ -800,7 +814,7 @@
           });
           
           imgCard.innerHTML = `
-            <img src="${img}">
+            <img src="${resolveImageUrl(img)}">
             <button class="remove-btn" onclick="removeSetImage(${index}, ${imgIndex}, event)">&times;</button>
           `;
           imageGrid.appendChild(imgCard);
@@ -883,7 +897,7 @@
           card.innerHTML = `
             <div class="prod-edit-head">
               <div class="prod-edit-img" onclick="changeProductImage(${catIndex}, ${prodIndex})">
-                <img src="${hasImg ? prod.image : 'logo preta.png'}" style="opacity: ${hasImg ? '1' : '0.2'}; object-fit: ${hasImg ? 'cover' : 'contain'}">
+                <img src="${hasImg ? resolveImageUrl(prod.image) : 'logo preta.png'}" style="opacity: ${hasImg ? '1' : '0.2'}; object-fit: ${hasImg ? 'cover' : 'contain'}">
                 <div class="prod-edit-img-overlay">Mudar</div>
               </div>
               <div class="prod-edit-fields">
@@ -955,7 +969,7 @@
           closeImageModal();
         };
         card.innerHTML = `
-          <img src="${img}">
+          <img src="${resolveImageUrl(img)}">
           <div class="picker-card-label">${img.split('/').pop()}</div>
         `;
         container.appendChild(card);
