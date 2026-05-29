@@ -1,0 +1,461 @@
+{
+  "lingerieSets": [
+    {
+      "id": "01",
+      "name": "Dualidade do Desejo",
+      "description": "Renda sofisticada com cinto-liga e tiras reguláveis. Um design marcante e sensual, disponível nas cores preto e branco.",
+      "images": [
+        "Lingerie dia dos namorados/IMG_2237.JPG",
+        "Lingerie dia dos namorados/IMG_2238.JPG",
+        "Lingerie dia dos namorados/IMG_2245.JPG",
+        "Lingerie dia dos namorados/IMG_2244.JPG",
+        "Lingerie dia dos namorados/IMG_2243.JPG"
+      ]
+    },
+    {
+      "id": "02",
+      "name": "Sombra Negra",
+      "description": "Tule preto com renda, três peças e cinto-liga — ousado, sensual e sofisticado.",
+      "images": [
+        "Lingerie dia dos namorados/IMG_2242.JPG",
+        "Lingerie dia dos namorados/IMG_2240.JPG",
+        "Lingerie dia dos namorados/IMG_2241.JPG"
+      ]
+    },
+    {
+      "id": "03",
+      "name": "Luxúria",
+      "description": "Renda bordada com brilhos e pedrarias — glamour e sedução em cada detalhe. Disponível em branco e preto.",
+      "images": [
+        "Lingerie dia dos namorados/IMG_2253.JPG",
+        "Lingerie dia dos namorados/IMG_2277.JPG",
+        "Lingerie dia dos namorados/IMG_2278.JPG",
+        "Lingerie dia dos namorados/IMG_2280.JPG",
+        "Lingerie dia dos namorados/IMG_2974.JPG",
+        "Lingerie dia dos namorados/IMG_2325.jpg"
+      ]
+    },
+    {
+      "id": "04",
+      "name": "Noiva Moderna",
+      "description": "Body branco em renda com recortes estruturados e véu — sensualidade nupcial com atitude moderna.",
+      "images": [
+        "Lingerie dia dos namorados/IMG_2258.JPG",
+        "Lingerie dia dos namorados/07cc555d-90be-42c5-a869-b731ce745e75.JPG",
+        "Lingerie dia dos namorados/88a763c8-2060-47f5-aeb7-fef54111ee64.JPG"
+      ]
+    },
+    {
+      "id": "05",
+      "name": "Azul Infinito",
+      "description": "Renda azul marinho com corselete estruturado e calcinha combinando — elegância inconfundível.",
+      "images": [
+        "Lingerie dia dos namorados/IMG_2262.JPG",
+        "Lingerie dia dos namorados/IMG_2263.JPG",
+        "Lingerie dia dos namorados/IMG_2264.JPG",
+        "Lingerie dia dos namorados/IMG_2265.JPG"
+      ]
+    },
+    {
+      "id": "06",
+      "name": "Renda Branca",
+      "description": "Sutiã de renda branca com calcinha tanga de tiras — delicado, minimalista e muito sensual.",
+      "images": [
+        "Lingerie dia dos namorados/IMG_2269.JPG",
+        "Lingerie dia dos namorados/IMG_2270.JPG",
+        "Lingerie dia dos namorados/IMG_2271.JPG"
+      ]
+    },
+    {
+      "id": "07",
+      "name": "Sonho Branco",
+      "description": "Saia-cinto de renda com sutiã e cinta-liga — romântico, sofisticado e deslumbrante.",
+      "images": [
+        "Lingerie dia dos namorados/IMG_2275.JPG",
+        "Lingerie dia dos namorados/IMG_2276.JPG",
+        "Lingerie dia dos namorados/IMG_2972.JPG",
+        "Lingerie dia dos namorados/IMG_2973.JPG",
+        "Lingerie dia dos namorados/IMG_2378.JPG",
+        "Lingerie dia dos namorados/IMG_2326.jpg",
+        "Lingerie dia dos namorados/IMG_2327.jpg"
+      ]
+    },
+    {
+      "id": "08",
+      "name": "Chama do Amor",
+      "description": "Lingerie vermelha + cueca boxer vermelha — o presente perfeito para o casal celebrar junto.",
+      "images": [
+        "Lingerie dia dos namorados/IMG_2316.jpg",
+        "Lingerie dia dos namorados/IMG_2372.JPG",
+        "Lingerie dia dos namorados/IMG_2374.JPG",
+        "Lingerie dia dos namorados/IMG_2373.JPG"
+      ]
+    },
+    {
+      "id": "09",
+      "name": "Vermelho Sedutor",
+      "description": "Conjunto vermelho com tiras e laço regulável nas costas — provocante e com ajuste perfeito.",
+      "images": [
+        "Lingerie dia dos namorados/IMG_2382.JPG",
+        "Lingerie dia dos namorados/IMG_2383.JPG"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Laço Branco",
+      "description": "Sutiã cropped de renda com tanga e cinta-liga — leve, sedutor e cheio de charme.",
+      "images": [
+        "Lingerie dia dos namorados/IMG_2254.JPG",
+        "Lingerie dia dos namorados/IMG_2375.JPG",
+        "Lingerie dia dos namorados/IMG_2971.JPG",
+        "Lingerie dia dos namorados/IMG_2246.JPG",
+        "Lingerie dia dos namorados/IMG_2324.jpg"
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Rendas da Lua",
+      "description": "Cropped de renda preta com meia-arrastão e cinto dourado — mistério e sensualidade em um só look.",
+      "images": [
+        "Lingerie dia dos namorados/IMG_2966.JPG",
+        "Lingerie dia dos namorados/IMG_2967.JPG",
+        "Lingerie dia dos namorados/IMG_2968.JPG",
+        "Lingerie dia dos namorados/IMG_2969.JPG",
+        "Lingerie dia dos namorados/IMG_2970.JPG"
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Paixão Ardente",
+      "description": "Tiras vermelhas com argolas douradas — ousado, moderno e cheio de atitude.",
+      "images": [
+        "Lingerie dia dos namorados/IMG_3847.PNG",
+        "Lingerie dia dos namorados/IMG_3848.PNG",
+        "Lingerie dia dos namorados/IMG_3849.PNG",
+        "Lingerie dia dos namorados/IMG_3850.PNG",
+        "Lingerie dia dos namorados/IMG_3851.PNG"
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Fantasia Dra. Amor",
+      "description": "Fantasia de enfermeira em tule branco com detalhes em vermelho — provocante, divertida e inesquecível.",
+      "images": [
+        "Lingerie dia dos namorados/IMG_2256.JPG",
+        "Lingerie dia dos namorados/IMG_2257.JPG"
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Mais Conjuntos",
+      "description": "Explore mais opções da nossa coleção exclusiva de Dia dos Namorados.",
+      "images": [
+        "Lingerie dia dos namorados/IMG_2248.JPG",
+        "Lingerie dia dos namorados/IMG_2266.JPG",
+        "Lingerie dia dos namorados/IMG_2267.JPG",
+        "Lingerie dia dos namorados/IMG_2268.JPG",
+        "Lingerie dia dos namorados/IMG_2281.JPG",
+        "Lingerie dia dos namorados/IMG_2282.JPG",
+        "Lingerie dia dos namorados/IMG_2283.JPG",
+        "Lingerie dia dos namorados/IMG_2284.JPG",
+        "Lingerie dia dos namorados/IMG_2318.jpg",
+        "Lingerie dia dos namorados/IMG_2319.jpg",
+        "Lingerie dia dos namorados/IMG_2320.jpg",
+        "Lingerie dia dos namorados/IMG_2321.jpg",
+        "Lingerie dia dos namorados/IMG_2322.jpg",
+        "Lingerie dia dos namorados/IMG_2323.jpg",
+        "Lingerie dia dos namorados/IMG_2377.JPG",
+        "Lingerie dia dos namorados/IMG_2384.JPG",
+        "Lingerie dia dos namorados/IMG_3852.PNG",
+        "Lingerie dia dos namorados/IMG_3853.JPG",
+        "Lingerie dia dos namorados/IMG_3854.PNG",
+        "Lingerie dia dos namorados/IMG_3855.JPG",
+        "Lingerie dia dos namorados/IMG_3856.PNG",
+        "Lingerie dia dos namorados/IMG_3857.PNG",
+        "Lingerie dia dos namorados/IMG_3858.PNG",
+        "Lingerie dia dos namorados/IMG_3875.JPG",
+        "Lingerie dia dos namorados/IMG_3876.JPG",
+        "Lingerie dia dos namorados/IMG_3877.JPG",
+        "Lingerie dia dos namorados/IMG_3878.JPG",
+        "Lingerie dia dos namorados/235f526d-b677-403e-8cda-544873c224e8.JPG",
+        "Lingerie dia dos namorados/33690241-286d-4c3a-87a9-c8085453f202.JPG",
+        "Lingerie dia dos namorados/55cfef3a-1452-400c-a726-7624b38ad2ff.JPG",
+        "Lingerie dia dos namorados/61494a23-df90-48dd-9bb4-2190bcda6a81.JPG",
+        "Lingerie dia dos namorados/9fb9d4dc-4267-423e-823e-a701b43bf594.JPG",
+        "Lingerie dia dos namorados/ecd1acf2-8414-4c55-b744-c6c718815f9c.JPG"
+      ]
+    }
+  ],
+  "productCategories": [
+    {
+      "category": "Géis Estimulantes",
+      "products": [
+        {
+          "name": "Pico Pulse",
+          "description": "Gel unissex com efeito de sucção real que vibra, pulsa, sensibiliza e refresca. Recria a sensação de \"sugar\" na pele com tecnologia sensorial avançada. Sabores: picolé de uva verde e picolé de melancia.",
+          "image": "IMG_3864.JPG"
+        },
+        {
+          "name": "Excitation Chicleteira",
+          "description": "Gel funcional feminino que pulsa, vibra e esquenta. Aumenta a sensibilidade, intensifica cada toque com calor suave e vibrações que elevam o prazer a um novo patamar. Aroma de chiclete.",
+          "image": "IMG_3891.WEBP"
+        },
+        {
+          "name": "Orgastic",
+          "description": "Gel sensibilizante feminino eletrizante para massagem íntima. Promove onda de calor, deixa os lábios vaginais mais sensíveis e causa leves vibrações no local aplicado.",
+          "image": "IMG_3895.WEBP"
+        },
+        {
+          "name": "Vulv's",
+          "description": "Gel sensibilizante feminino Intt de ação rápida e efeito prolongado. Desenvolvido para intensificar as sensações durante o prazer íntimo com delicada fragância.",
+          "image": "IMG_2448.JPG"
+        },
+        {
+          "name": "Vulv's Ice",
+          "description": "Versão refrescante do Vulv's com efeito ice. Sensações únicas e intensas que combinam estimulação e frescor durante os momentos de prazer íntimo.",
+          "image": "IMG_2449.WEBP"
+        },
+        {
+          "name": "Super Macho",
+          "description": "Gel estimulante e vasodilatador masculino com Ginseng, Catuaba e Arginina. Potencializa a ereção, aumenta o desejo sexual e proporciona orgasmos mais intensos. Efeito de calor.",
+          "image": "IMG_3893.WEBP"
+        },
+        {
+          "name": "Vibration",
+          "description": "Vibrador Líquido Gel à base de jambu — planta da região Norte do Brasil. Proporciona formigamento, vibração e pulsação nas áreas íntimas. Faz a língua vibrar, levando o sexo oral a outro nível. Sabores: morango, menta, vodca com energético, maçã do amor e chiclete.",
+          "image": "Vibration gel.jpg"
+        },
+        {
+          "name": "Shock-G",
+          "description": "Vibrador Líquido Gel Beijável de alta potência com sensações eletrizantes e intensas. Lubrifica a região e estimula a produção de saliva. Ideal para masturbação e sexo oral. Sabores: morango, menta, algodão doce e leite condensado.",
+          "image": "S H O C K- G.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Caldas Picantes &amp; Beijáveis",
+      "products": [
+        {
+          "name": "OOH Delícia",
+          "description": "Calda picante da Linha Collors Intt para explorar novas sensações. Ativada pelo atrito — quanto mais fricção, mais esquenta. Sabores: marshmallow, pudim e morango azedinho.",
+          "image": "IMG_3885.WEBP"
+        },
+        {
+          "name": "Calda Picante Suculenta Calianer",
+          "description": "Calda beijável sabor merengue que derrete na boca. Ativada por fricção transforma beijos e carícias em prazeres intensos. Toque levemente apimentado que cria um verdadeiro fogaréu!",
+          "image": "IMG_3886.WEBP"
+        }
+      ]
+    },
+    {
+      "category": "Lubrificantes &amp; Géis Deslizantes",
+      "products": [
+        {
+          "name": "Gel Deslizante Suculenta Calianer",
+          "description": "Explosão de sabor e sensações com aroma de merengue. Combina deslize intenso e hidratação profunda com Hialuronato de Sódio. Efeito auto glide que se reativa pela fricção.",
+          "image": "IMG_3887.JPG"
+        },
+        {
+          "name": "Lubrificantes Comestíveis",
+          "description": "Lubrificante beijável à base de água, ideal para sexo oral e masturbação. Sabores: morango hot, chiclete, babaloo e ice black.",
+          "image": "IMG_3888.WEBP"
+        },
+        {
+          "name": "Bubble Vibes",
+          "description": "Gel deslizante com microesferas sensoriais ativadas pelo toque. Primeiro o deslize suave, depois as esferas liberam estímulos vibratórios e aquecimento gradual. Aroma delicioso de chiclete.",
+          "image": "IMG_3889.WEBP"
+        },
+        {
+          "name": "Gel Deslizante Deborah Secco",
+          "description": "Lubrificante íntimo com toque quente e sabor de frutas vermelhas. Fórmula à base de água com ácido hialurônico, Vitamina E e D-Pantenol.",
+          "image": "IMG_3890.WEBP"
+        },
+        {
+          "name": "Toque de Veludo",
+          "description": "Gel em silicone para masturbação, penetração e lubrificação. Toque macio e deslizante com fragância especial. Dura muito mais que lubrificantes à base de água.",
+          "image": "IMG_3894.WEBP"
+        },
+        {
+          "name": "Love Lub",
+          "description": "Lubrificante comestível beijável LapiLove com alta lubrificação à base de água. Ideal para sexo oral, anal ou sex toys. Sabores: morango, melancia, menta e menta ice.",
+          "image": "IMG_3900.WEBP"
+        },
+        {
+          "name": "Confort Lub",
+          "description": "Lubrificante com cheiro e sabor de alta qualidade La Pimienta. Elimina o atrito, facilita a penetração e pode ser usado para massagem corporal. Sabores: neutro, morango, menta e morango com champagne.",
+          "image": "IMG_3901.WEBP"
+        },
+        {
+          "name": "Cliv Intt Gold",
+          "description": "Gel dessensibilizante extraforte para sexo anal. Reduz a sensibilidade local, elimina desconforto e facilita a penetração. Enriquecido com microcápsulas de Vitamina E para cicatrização.",
+          "image": "IMG_3880.JPG"
+        },
+        {
+          "name": "Hidranal",
+          "description": "Hidratante íntimo vaginal e anal inovador com ácido hialurônico. Minimiza fissuras, regenera a pele e reduz o atrito. Diferença garantida desde o primeiro uso.",
+          "image": "IMG_3899.WEBP"
+        }
+      ]
+    },
+    {
+      "category": "Óleos de Massagem &amp; Corporal",
+      "products": [
+        {
+          "name": "Provoca-Me",
+          "description": "Óleo de massagem bifásico com aroma altamente afrodisíaco e hidratação intensa. Composição não gordurosa de absorção rápida que mantém elasticidade e suavidade da pele.",
+          "image": "IMG_3896.WEBP"
+        },
+        {
+          "name": "Tantric Apple",
+          "description": "Óleo para massagem tântrica com delicioso aroma de maçã do amor. Proporciona sensações incríveis de prazer usando apenas as mãos — ideal para massagem tântrica ou relaxante.",
+          "image": "IMG_3897.JPG"
+        },
+        {
+          "name": "Sweet Glow",
+          "description": "Gel aromatizante corporal com aroma de chiclete para virilha e corpo. Une leveza do gel à hidratação do creme com textura aveludada e absorção rápida.",
+          "image": "IMG_3898.PNG"
+        }
+      ]
+    },
+    {
+      "category": "Vibradores &amp; Sex Toys",
+      "products": [
+        {
+          "name": "Pink Wave",
+          "description": "Vibrador com 12 modos de vibração em silicone cirúrgico. Silencioso, fácil manuseio e carregador USB. Design ergonômico desenvolvido para o prazer feminino máximo.",
+          "image": "IMG_3911.WEBP"
+        },
+        {
+          "name": "Vibrador Golfinho",
+          "description": "Vibrador compacto no formato de golfinho — divertido e discreto com poderosa vibração interna. Disponível em roxo, rosa e preto. Perfeito para estimulação do clitóris.",
+          "image": "IMG_2468.JPG"
+        },
+        {
+          "name": "Mini Bullet",
+          "description": "Bullet vibratório Intt Toys em silicone preto matte. Compacto, discreto e com múltiplas funções de vibração. Carregamento via USB — potência máxima em formato mini.",
+          "image": "IMG_3909.WEBP"
+        },
+        {
+          "name": "Anel Vibratório",
+          "description": "Anel peniano com vibrador embutido para estimular ambos os parceiros durante a penetração. Disponível em transparente, rosa e azul. Prazer compartilhado a dois!",
+          "image": "IMG_2466.JPG"
+        },
+        {
+          "name": "Easy Beat Egg",
+          "description": "Kit de masturbadores masculinos no formato de ovo com texturas internas variadas: Clicker, Wavy, Twister, Spider, Silky e Stepper. Flexível, descartável e muito prazeroso.",
+          "image": "IMG_2463.jpg"
+        },
+        {
+          "name": "Plug Anal Joia",
+          "description": "Plug anal metálico com pedra preciosa decorativa. Acabamento premium, fácil inserção e remoção. Disponível em vermelho, rosa e pink. Sofisticação e prazer em um só acessório.",
+          "image": "IMG_3907.WEBP"
+        }
+      ]
+    },
+    {
+      "category": "Kits &amp; Produtos Especiais",
+      "products": [
+        {
+          "name": "Kit Primeiro Anal",
+          "description": "Kit completo com 3 itens: Gloss Anal, Gel Lubrificante e Gel Dessensibilizante. Desenvolvido para quem busca novos prazeres com segurança, conforto e muita satisfação.",
+          "image": "IMG_3916.WEBP"
+        },
+        {
+          "name": "Melzinho Power Honey",
+          "description": "Mel estimulante natural para aumentar disposição e energia com cafeína e canela. Caixa com 8 sachês de 10g — o impulso natural que você precisa para a hora H.",
+          "image": "IMG_3910.WEBP"
+        },
+        {
+          "name": "Calcinha Solúvel Vibration",
+          "description": "Calcinha comestível sabor morango — a fantasia mais gostosa para o casal. Feita com ingredientes seguros, dissolve-se com contato úmido. Delicie-se com essa fantasia!",
+          "image": "IMG_2462.WEBP"
+        },
+        {
+          "name": "Velas de Massagem Beijáveis",
+          "description": "Velas Intt em 4 sabores: caipirinha, chocolate, morango e pêssego. Derretem na temperatura ideal para massagem — nutritivas para a pele e beijáveis.",
+          "image": "IMG_2461.JPG"
+        },
+        {
+          "name": "Desodorante Íntimo",
+          "description": "Elimina qualquer tipo de odor de forma prática, devolvendo confiança e bem-estar. Disponível nas fragrâncias: Cheiro Dela, Morango, Menta, Ylang Ylang e Vanilla.",
+          "image": "Desodorante intimo.webp"
+        }
+      ]
+    },
+    {
+      "category": "BDSM &amp; Acessórios Sensuais",
+      "products": [
+        {
+          "name": "Flogger",
+          "description": "Chicote de couro preto com cabo ergonômico. Perfeito para explorar sensações entre tiras suaves e intensas. Acabamento premium para amantes de BDSM.",
+          "image": "IMG_2476.JPG"
+        },
+        {
+          "name": "Paddle",
+          "description": "Raquete de couro preto ideal para spanking e exploração de fantasias. Design clássico com alça de segurança e acabamento resistente.",
+          "image": "IMG_2477.JPG"
+        },
+        {
+          "name": "Algemas Metal",
+          "description": "Algemas metálicas resistentes com acabamento cromado. Perfeitas para roleplay e jogos de dominação. Acompanham chave. Resistência e estética premium.",
+          "image": "IMG_2478.JPG"
+        },
+        {
+          "name": "Algemas Peluciadas",
+          "description": "Algemas metálicas revestidas de pelúcia preta — confortáveis na pele, ideais para dominação com estilo e maciez. Acompanham chave.",
+          "image": "IMG_2479.JPG"
+        },
+        {
+          "name": "Venda para os Olhos",
+          "description": "Venda luxuosa em pelúcia disponível em vermelho, rosa e preto. Aguça os demais sentidos e intensifica cada toque. Essencial para o Jogo da Sedução.",
+          "image": "IMG_2480.JPG"
+        },
+        {
+          "name": "Kit Sedução BDSM",
+          "description": "Kit completo composto por venda peluciada, algemas ajustáveis e chicote flogger. Ideal para explorar novas sensações e apimentar a noite a dois.",
+          "image": "kit-bdsm-3-pecas.png"
+        },
+        {
+          "name": "Coleira com Guia Sedução",
+          "description": "Gargantilha/coleira em couro trabalhado com textura elegante e guia com corrente dourada removível. Ajustável e sofisticada para jogos de dominação.",
+          "image": "coleira-com-guia.png"
+        },
+        {
+          "name": "Garganta Profunda",
+          "description": "Spray que ameniza sensações desconfortáveis durante o sexo oral mais profundo. Cria uma barreira protetora na região da garganta, permitindo uma experiência plena sem impedimentos.",
+          "image": "garganta profunda.webp"
+        }
+      ]
+    },
+    {
+      "category": "Jogos &amp; Diversão a Dois",
+      "products": [
+        {
+          "name": "Jogo das Intenções",
+          "description": "85 cartas com perguntas íntimas e desafios para aprofundar a conexão do casal. Explora desejos, intenções e cumplicidade. Perfeito para criar conversas significativas e momentos inesquecíveis.",
+          "image": "IMG_3912.JPG"
+        },
+        {
+          "name": "Jogo da Sedução",
+          "description": "Jogo de tabuleiro picante e sensual. O desafio: chegar ao fim sem se render ao amor. Você vai precisar de: venda para os olhos, óleo de massagem e cubo de gelo (não inclusos).",
+          "image": "IMG_3914.WEBP"
+        },
+        {
+          "name": "Jogo Clímax",
+          "description": "69 cartas com perguntas e desafios sobre sexualidade, desejos e fetiches + gel estimulante Vulv's. Explore segredos, revele intenções e viva momentos mais divertidos e ousados.",
+          "image": "IMG_3913.WEBP"
+        },
+        {
+          "name": "Cubos do Amor",
+          "description": "Dados fosforescentes que brilham no escuro com partes do corpo e ações sensuais. Jogue e descubra qual fantasia o destino reserva para a noite. Diversão garantida a dois!",
+          "image": "IMG_2474.JPG"
+        },
+        {
+          "name": "Raspadinha do Amor",
+          "description": "Raspadinha erótica com combinações de ações e partes do corpo. Deixe a sorte decidir e transforme cada momento em uma brincadeira inesquecível a dois!",
+          "image": "IMG_2470.JPG"
+        }
+      ]
+    }
+  ]
+}
