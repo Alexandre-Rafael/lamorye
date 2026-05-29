@@ -161,6 +161,12 @@ module.exports = async (req, res) => {
         } else {
           res.status(500).json({ success: false, error: 'Failed to commit changes to GitHub' });
         }
+      } else if (process.env.VERCEL) {
+        // Running on Vercel but GITHUB_TOKEN is missing
+        res.status(400).json({
+          success: false,
+          error: 'Erro de permissão: A variável GITHUB_TOKEN não foi configurada nas configurações de variáveis de ambiente do projeto na Vercel.'
+        });
       } else {
         // We are local: write directly to disk
         fs.writeFileSync(catalogPath, catalogStr, 'utf8');
