@@ -215,6 +215,65 @@
       transform: rotate(180deg);
     }
 
+    .set-head-right {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .set-del-btn {
+      background: transparent;
+      border: 1px solid rgba(201,64,104,0.35);
+      color: var(--rose);
+      font-size: 0.7rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 3px;
+      cursor: pointer;
+      letter-spacing: 0.05em;
+      transition: all 0.2s;
+    }
+    .set-del-btn:hover {
+      background: rgba(201,64,104,0.15);
+      border-color: var(--rose);
+    }
+
+    /* Multi-select image picker */
+    .picker-card.selected {
+      border-color: var(--gold) !important;
+    }
+    .picker-card.selected::after {
+      content: '✓';
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      background: var(--gold);
+      color: #07020a;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      font-weight: 700;
+    }
+    .modal-footer {
+      padding: 1rem 1.5rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-shrink: 0;
+    }
+    .modal-selection-count {
+      font-size: 0.82rem;
+      color: var(--text-dim);
+    }
+    .modal-footer-btns {
+      display: flex;
+      gap: 0.75rem;
+    }
+
     .set-body {
       padding: 1.5rem;
       border-top: 1px solid var(--border);
@@ -668,15 +727,22 @@
 
   <!-- Modal for Image Selection -->
   <div id="image-modal" class="modal-overlay">
-    <div class="modal-box">
+    <div class="modal-box" style="display:flex;flex-direction:column;max-height:90vh;">
       <div class="modal-head">
-        <div class="modal-title">Escolher Imagem do Projeto</div>
+        <div class="modal-title" id="modal-title-txt">Escolher Fotos</div>
         <button class="modal-close" onclick="closeImageModal()">&times;</button>
       </div>
-      <div class="modal-body">
-        <button class="btn btn-primary" style="margin-bottom: 1.5rem; width: 100%; text-align: center;" onclick="triggerFileUpload()">Fazer Upload de Nova Foto</button>
+      <div class="modal-body" style="overflow-y:auto;flex:1;">
+        <button class="btn btn-primary" style="margin-bottom:1.5rem;width:100%;text-align:center;" onclick="triggerFileUpload()">⬆ Fazer Upload de Nova Foto</button>
         <div id="image-picker-container" class="image-picker-grid">
           <!-- Rendered dynamically -->
+        </div>
+      </div>
+      <div class="modal-footer" id="modal-footer" style="display:none;">
+        <span class="modal-selection-count" id="modal-sel-count">0 fotos selecionadas</span>
+        <div class="modal-footer-btns">
+          <button class="btn btn-secondary" onclick="closeImageModal()">Cancelar</button>
+          <button class="btn btn-primary" onclick="confirmMultiSelect()">Adicionar Selecionadas</button>
         </div>
       </div>
     </div>
@@ -688,6 +754,8 @@
     let catalog = { lingerieSets: [], productCategories: [] };
     let allWorkspaceImages = [];
     let activeSelectCallback = null;
+    let isMultiSelect = false;
+    let multiSelected = [];
 
     // Resolve relative image URLs to GitHub CDN in Vercel production
     function resolveImageUrl(url) {
@@ -753,7 +821,10 @@
             <span class="set-head-name">${set.name}</span>
             <span class="set-head-count">${set.images.length} fotos</span>
           </div>
-          <div class="set-arrow">▼</div>
+          <div class="set-head-right">
+            <button class="set-del-btn" onclick="deleteSet(${index}, event)">Apagar</button>
+            <div class="set-arrow">▼</div>
+          </div>
         `;
         
         const setBody = document.createElement('div');
@@ -823,17 +894,17 @@
           imageGrid.appendChild(imgCard);
         });
         
-        // Add image card
+        // Add image card — multi-select mode
         const addCard = document.createElement('div');
         addCard.className = 'add-img-card';
-        addCard.onclick = () => openImageModal(imgUrl => {
-          catalog.lingerieSets[index].images.push(imgUrl);
+        addCard.onclick = () => openImageModal(urls => {
+          urls.forEach(u => catalog.lingerieSets[index].images.push(u));
           renderLingerieSets();
           document.getElementById(`set-${set.id}`).classList.add('open');
-        });
+        }, true);
         addCard.innerHTML = `
           <div class="add-img-icon">+</div>
-          <div class="add-img-text">Adicionar</div>
+          <div class="add-img-text">Adicionar fotos</div>
         `;
         imageGrid.appendChild(addCard);
         
@@ -846,6 +917,16 @@
         setItem.appendChild(setBody);
         container.appendChild(setItem);
       });
+    }
+
+    function deleteSet(index, e) {
+      e.stopPropagation();
+      const name = catalog.lingerieSets[index].name;
+      if (confirm(`Apagar o conjunto "${name}"?\n\nEsta ação não pode ser desfeita.`)) {
+        catalog.lingerieSets.splice(index, 1);
+        renderLingerieSets();
+        showToast(`Conjunto "${name}" removido. Clique em Salvar Alterações para confirmar.`);
+      }
     }
 
     function addNewSet() {
@@ -960,8 +1041,8 @@
     }
 
     function changeProductImage(catIdx, prodIdx) {
-      openImageModal(imgUrl => {
-        catalog.productCategories[catIdx].products[prodIdx].image = imgUrl;
+      openImageModal(urls => {
+        catalog.productCategories[catIdx].products[prodIdx].image = urls[0];
         renderProductCategories();
       });
     }
@@ -974,33 +1055,65 @@
     }
 
     // Modal Image Picker
-    function openImageModal(callback) {
+    function openImageModal(callback, multiSelect = false) {
       activeSelectCallback = callback;
-      const modal = document.getElementById('image-modal');
+      isMultiSelect = multiSelect;
+      multiSelected = [];
+
+      const modal     = document.getElementById('image-modal');
       const container = document.getElementById('image-picker-container');
-      container.innerHTML = '';
-      
-      // Load workspace images
+      const footer    = document.getElementById('modal-footer');
+      const titleTxt  = document.getElementById('modal-title-txt');
+
+      titleTxt.textContent = multiSelect ? 'Selecionar Fotos (pode escolher várias)' : 'Escolher Imagem';
+      footer.style.display = multiSelect ? 'flex' : 'none';
+      container.innerHTML  = '';
+      updateMultiCount();
+
       allWorkspaceImages.forEach(img => {
         const card = document.createElement('div');
         card.className = 'picker-card';
+        card.dataset.img = img;
         card.onclick = () => {
-          if (activeSelectCallback) activeSelectCallback(img);
-          closeImageModal();
+          if (isMultiSelect) {
+            card.classList.toggle('selected');
+            if (card.classList.contains('selected')) {
+              multiSelected.push(img);
+            } else {
+              multiSelected = multiSelected.filter(x => x !== img);
+            }
+            updateMultiCount();
+          } else {
+            if (activeSelectCallback) activeSelectCallback([img]);
+            closeImageModal();
+          }
         };
         card.innerHTML = `
-          <img src="${resolveImageUrl(img)}">
+          <img src="${resolveImageUrl(img)}" loading="lazy">
           <div class="picker-card-label">${img.split('/').pop()}</div>
         `;
         container.appendChild(card);
       });
-      
+
       modal.classList.add('open');
+    }
+
+    function updateMultiCount() {
+      const el = document.getElementById('modal-sel-count');
+      if (el) el.textContent = `${multiSelected.length} foto${multiSelected.length !== 1 ? 's' : ''} selecionada${multiSelected.length !== 1 ? 's' : ''}`;
+    }
+
+    function confirmMultiSelect() {
+      if (multiSelected.length === 0) { closeImageModal(); return; }
+      if (activeSelectCallback) activeSelectCallback([...multiSelected]);
+      closeImageModal();
     }
 
     function closeImageModal() {
       document.getElementById('image-modal').classList.remove('open');
       activeSelectCallback = null;
+      isMultiSelect = false;
+      multiSelected = [];
       document.getElementById('file-uploader').value = '';
     }
 
@@ -1028,7 +1141,7 @@
               allWorkspaceImages.push(result.url);
             }
             if (activeSelectCallback) {
-              activeSelectCallback(result.url);
+              activeSelectCallback([result.url]);
             }
             closeImageModal();
           } else {
