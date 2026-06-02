@@ -638,7 +638,10 @@
 
     <!-- TAB 1: LINGERIE SETS -->
     <div id="content-lingerie" class="tab-content active">
-      <h2 class="section-title">Gerenciar Conjuntos</h2>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;flex-wrap:wrap;gap:1rem;">
+        <h2 class="section-title" style="margin-bottom:0">Gerenciar Conjuntos</h2>
+        <button class="btn btn-primary" onclick="addNewSet()" style="white-space:nowrap">+ Novo Conjunto</button>
+      </div>
       <div id="sets-container" class="set-list">
         <!-- Rendered dynamically -->
       </div>
@@ -843,6 +846,23 @@
         setItem.appendChild(setBody);
         container.appendChild(setItem);
       });
+    }
+
+    function addNewSet() {
+      const maxId = catalog.lingerieSets.reduce((max, s) => {
+        const n = parseInt(s.id) || 0;
+        return n > max ? n : max;
+      }, 0);
+      const newId = String(maxId + 1).padStart(2, '0');
+      catalog.lingerieSets.push({ id: newId, name: 'Novo Conjunto', description: '', images: [] });
+      renderLingerieSets();
+      setTimeout(() => {
+        const el = document.getElementById(`set-${newId}`);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          if (!el.classList.contains('open')) toggleAccordion(el);
+        }
+      }, 80);
     }
 
     function toggleAccordion(item) {
